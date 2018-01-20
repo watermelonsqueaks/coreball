@@ -15,16 +15,35 @@
     <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0
+        }
+        
+        #to_top {
+            /* width: 30px; */
+            height: 40px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font: 14px/20px arial;
+            text-align: center;
+            background: #06c;
+            /* position: absolute;
+            cursor: pointer; */
+            color: #fff
+        }
+    </style>
 </head>
 
-<body>
+<body style="height:500px;">
 
     <!-- Wrapper -->
     <div id="wrapper">
 
         <!-- Header -->
         <header id="header" class="alt">
-            <a href="index.html" class="logo"><strong>LEE</strong> <span>abc</span></a>
+            <a href="index.html" class="logo"><strong>FEI</strong> <span>MENG</span></a>
             <nav>
                 <a href="#menu">菜单</a>
             </nav>
@@ -33,14 +52,12 @@
         <!-- Menu 菜单-->
         <nav id="menu">
             <ul class="links">
-                <li><a href="index.html">主页</a></li>
-                <li><a href="landing.html">页面</a></li>
-                <li><a href="generic.html">通用</a></li>
-                <li><a href="elements.html">元素</a></li>
-            </ul>
-            <ul class="actions vertical">
-                <li><a href="#" class="button special fit">注册</a></li>
-                <li><a href="#" class="button fit">登录</a></li>
+                <li><a href="index.html" class="button special fit">主页</a></li>
+                <li><a href="landing.html" class="button fit">日常</a></li>
+                <li><a href="generic.html" class="button special fit">通用</a></li>
+                <li><a href="elements.html" class="button fit">元素</a></li>
+                <li><a href="zhuanji.html" class="button special fit">专辑</a></li>
+                <li><a href="King.html" class="button fit">国王</a></li>
             </ul>
         </nav>
 
@@ -69,7 +86,7 @@
 										<img src="images/pic01.jpg" alt="" />
 									</span>
                     <header class="major">
-                        <h3><a href="landing.html" class="link">团队</a></h3>
+                        <h3><a href="zhuanji.html" class="link">专辑</a></h3>
                         <p>介绍介绍</p>
                     </header>
                 </article>
@@ -78,7 +95,7 @@
 										<img src="images/pic02.jpg" alt="" />
 									</span>
                     <header class="major">
-                        <h3><a href="landing.html" class="link">日常日常</a></h3>
+                        <h3><a href="landing.html" class="link">日常</a></h3>
                         <p>日常日常</p>
                     </header>
                 </article>
@@ -87,7 +104,7 @@
 										<img src="images/pic03.jpg" alt="" />
 									</span>
                     <header class="major">
-                        <h3><a href="landing.html" class="link">案例</a></h3>
+                        <h3><a href="generic.html" class="link">通用</a></h3>
                         <p>案例案例案例案例</p>
                     </header>
                 </article>
@@ -96,7 +113,7 @@
 										<img src="images/pic04.jpg" alt="" />
 									</span>
                     <header class="major">
-                        <h3><a href="landing.html" class="link">优势</a></h3>
+                        <h3><a href="elements.html" class="link">元素</a></h3>
                         <p>优势优势优势</p>
                     </header>
                 </article>
@@ -106,7 +123,7 @@
 									</span>
                     <header class="major">
                         <h3>
-                            <a href="landing.html" class="link">招聘</a>
+                            <a href="King.html" class="link">国王</a>
                         </h3>
                         <p>招聘招聘招聘招聘</p>
                     </header>
@@ -139,7 +156,7 @@
         </div>
 
         <!-- Contact -->
-        <section id="contact">
+        <!-- <section id="contact">
             <div class="inner">
                 <section>
                     <form method="post" action="#">
@@ -187,18 +204,11 @@
                     </section>
                 </section>
             </div>
-        </section>
+        </section> -->
 
         <!-- Footer -->
         <footer id="footer">
             <div class="inner">
-                <ul class="icons">
-                    <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                </ul>
                 <ul class="copyright">
                     <li>&copy; LEE</li>
                     <li>设计: <a href="#">LEE NO.1</a></li>
@@ -208,6 +218,7 @@
         </footer>
 
     </div>
+    <div id="to_top" class="icon fa-arrow-up">返回顶部</div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -215,8 +226,17 @@
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script>
+        window.onload = function() {
+            var oTop = document.getElementById("to_top");
+            var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+            var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+            oTop.onclick = function() {
+                document.documentElement.scrollTop = document.body.scrollTop = 0;
+            }
+        }
+    </script>
 
 </body>
 
