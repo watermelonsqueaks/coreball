@@ -21,19 +21,6 @@
             margin: 0;
             padding: 0
         }
-        
-        #to_top {
-            /* width: 30px; */
-            height: 40px;
-            padding-bottom: 10px;
-            padding-top: 10px;
-            font: 14px/20px arial;
-            text-align: center;
-            background: #06c;
-            /* position: absolute;
-            cursor: pointer; */
-            color: #fff
-        }
     </style>
 </head>
 
@@ -212,14 +199,14 @@
             <div class="inner">
                 <ul class="copyright">
                     <li>&copy; LEE</li>
-                    <li>设计: <a href="#">LEE NO.1</a></li>
+                    <li>制作: <a href="#">LEE</a></li>
 
                 </ul>
             </div>
+            <div><a href="/#" class="footer-button button special">Back to the top</a></div>
         </footer>
 
     </div>
-    <div id="to_top" class="icon fa-arrow-up">返回顶部</div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -228,16 +215,6 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        window.onload = function() {
-            var oTop = document.getElementById("to_top");
-            var screenw = document.documentElement.clientWidth || document.body.clientWidth;
-            var screenh = document.documentElement.clientHeight || document.body.clientHeight;
-            oTop.onclick = function() {
-                document.documentElement.scrollTop = document.body.scrollTop = 0;
-            }
-        }
-    </script>
 
 </body>
 
