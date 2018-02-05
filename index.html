@@ -37,11 +37,12 @@
             <ul class="links">
                 <li><a href="index.html" class="button special fit">主页</a></li>
                 <li><a href="landing.html" class="button fit">日常</a></li>
-                <li><a href="generic.html" class="button special fit">通用</a></li>
+                <li><a href="generic.html" class="button fit">通用</a></li>
                 <li><a href="queen.html" class="button fit">王后</a></li>
-                <li><a href="album.html" class="button special fit">专辑</a></li>
+                <li><a href="album.html" class="button fit">专辑</a></li>
                 <li><a href="King.html" class="button fit">国王</a></li>
-                <li><a href="about.html" class="button special fit">关于我们</a></li>
+                <li><a href="about.html" class="button fit">关于我们</a></li>
+                <li><a href="game.html" class="button fit">小游戏</a></li>
             </ul>
         </nav>
 
@@ -97,7 +98,7 @@
 										<img src="images/pic04.jpg" alt="" />
 									</span>
                     <header class="major">
-                        <h3><a href="queen.html" class="link">王后</a></h3>
+                        <h3><a href="queen.html" class="link">Girl</a></h3>
                         <p>优势优势优势</p>
                     </header>
                 </article>
@@ -107,7 +108,7 @@
 									</span>
                     <header class="major">
                         <h3>
-                            <a href="King.html" class="link">国王</a>
+                            <a href="King.html" class="link">Boy</a>
                         </h3>
                         <p>招聘招聘招聘招聘</p>
                     </header>
@@ -119,6 +120,15 @@
                     <header class="major">
                         <h3><a href="about.html" class="link">关于我们</a></h3>
                         <p>关于我们关于我们关于我们</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                  <img src="images/pic03.jpg" alt="" />
+                </span>
+                    <header class="major">
+                        <h3><a href="game.html" class="link">小游戏</a></h3>
+                        <p>小游戏</p>
                     </header>
                 </article>
             </section>
@@ -195,13 +205,23 @@
                 <ul class="copyright">
                     <li>&copy; LEE</li>
                     <li>制作: <a href="#">LEE</a></li>
-
+                    <li id="demo"></li>
                 </ul>
             </div>
         </footer>
 
     </div>
+    <script>
+        var myVar = setInterval(function() {
+            myTimer()
+        }, 1000);
 
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("demo").innerHTML = t;
+        }
+    </script>
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
