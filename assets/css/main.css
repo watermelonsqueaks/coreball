@@ -143,6 +143,10 @@ body {
     -webkit-text-size-adjust: none;
 }
 
+.img-padding {
+    padding: 15px;
+}
+
 
 /* Box Model */
 
